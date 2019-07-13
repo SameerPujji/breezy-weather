@@ -29,7 +29,7 @@ $(document).ready(function() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       var requestString =
-        "http://localhost:3000/getWeather/" +
+        "https://breezyweather.herokuapp.com/getWeather/" +
         position.coords.latitude +
         "," +
         position.coords.longitude;
